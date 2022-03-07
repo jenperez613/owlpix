@@ -19,10 +19,15 @@
     "enableHibernateCache": true,
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
+    "entities": ["Album", "Photo", "Tag"],
     "entitySuffix": "",
+    "herokuAppName": "owlpix",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "17",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "7.6.0",
     "languages": ["en", "es"],
+    "lastLiquibaseTimestamp": 1646620265000,
     "messageBroker": false,
     "nativeLanguage": "en",
     "otherModules": [],
@@ -38,6 +43,7 @@
     "skipFakeData": false,
     "skipUserManagement": true,
     "testFrameworks": ["cypress"],
+    "useOkta": false,
     "websocket": false,
     "withAdminUi": true
   }

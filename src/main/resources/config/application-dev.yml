@@ -32,7 +32,7 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/owlpix;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:file:./target/h2db/db/owlpix;DB_CLOSE_ON_EXIT=TRUE;FILE_LOCK=NO
     username: owlpix
     password:
     hikari:
@@ -46,7 +46,7 @@ spring:
     database-platform: tech.jhipster.domain.util.FixedH2Dialect
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
-    contexts: dev, faker
+    contexts: dev
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
   thymeleaf:

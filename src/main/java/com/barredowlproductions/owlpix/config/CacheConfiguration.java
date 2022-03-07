@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, com.barredowlproductions.owlpix.domain.User.class.getName());
             createCache(cm, com.barredowlproductions.owlpix.domain.Authority.class.getName());
             createCache(cm, com.barredowlproductions.owlpix.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.barredowlproductions.owlpix.domain.Album.class.getName());
+            createCache(cm, com.barredowlproductions.owlpix.domain.Photo.class.getName());
+            createCache(cm, com.barredowlproductions.owlpix.domain.Photo.class.getName() + ".tags");
+            createCache(cm, com.barredowlproductions.owlpix.domain.Tag.class.getName());
+            createCache(cm, com.barredowlproductions.owlpix.domain.Tag.class.getName() + ".photos");
             // jhipster-needle-ehcache-add-entry
         };
     }
